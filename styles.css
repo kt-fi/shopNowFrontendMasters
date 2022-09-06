@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body {
+   display: flex;
+   flex-flow: wrap;
+   font-family: 'Spartan', sans-serif;
+   font-size: 5rem;
+   width: 100vw;
+}
+
+.nav {
+    position: absolute;
+    width: 100vw;
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    color: white;
+    font-size: 3rem;;
+    margin: 1.5rem
+}
+
+.nav-link {
+    margin: 1rem;
+}
+
+.slider {
+    width: 55%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    grid-template-rows: 570px;
+    
+}
+
+
+
+
+
+.slider-image {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.slider-btn-ctn {
+    width:33.3%;
+    height:15%;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-btn {
+    width:45%;
+    height:100%;
+    font-size: 5rem;
+    color:  hsl(0, 0%, 63%);
+    border: none;
+    background-color: black;
+}
+
+.infoBox-cont {
+    width: max(60%, 500px);
+    margin: 0 auto;
+}
+
+
+.infoBox {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-rows: 82% 18%;
+}
+
+.infoBox-header {
+    margin: 1rem 0;
+    font-size: 4.5rem;;
+}
+
+.infoBox-text {
+    color: hsl(0, 0%, 63%);
+    
+    line-height: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.about {
+    display: flex;
+    flex-flow:wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.about-text-cont {
+    width: max(80%, 400px);
+    margin: 0 auto;
+}
+
+
+
+.about-img1 {
+    width: 30%;
+    height: 100%
+
+}
+
+.about-img2 {
+    width: 30%;
+    height: 100%
+}
+
+.about-text {
+    width:40%;
+}
+
+.shop-btn {
+    margin: 1.5rem 0;;
+    padding: 5px 0;
+    border: none;
+    letter-spacing: 9.5px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.arrow {
+    font-size: 1.5rem;
+}
+
+.about-text-header {
+    letter-spacing: 6.5px;
+}
+
+.about-text-text {
+    color: hsl(0, 0%, 63%);
+    margin: 1rem 0;
+    line-height: 2.5rem;
+}
+
+
+@media (max-width: 800px){
+
+    *,
+*::before,
+*::after {
+    font-size: 60%;
+}
+    .slider {
+        width: 100%;
+        height: 350px
+    }
+
+    .shop-btn {
+        font-size: 80%;
+        font-weight: 500;
+    }
+
+    .arrow {
+font-size: 150%;   
+ }
+    
+
+    .infoBox {
+        width: 100vw;
+        height: 40rem;
+    }
+
+    .infoBox-cont {
+        width: 70%;
+        height: min-content;
+}
+
+    .infoBox-header {
+        font-size: 2rem;
+    }
+
+    .infoBox-text {
+        line-height: 2rem;
+    }
+
+    .about{
+        width: 100vw;
+        height: min-content;
+        margin: 0 auto;
+    }
+    .about-text {
+        margin: 15% 0;
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+        height: min-content;
+        font-size: 60%;;
+        overflow: hidden;
+    }
+
+    .about-img1 {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .about-img2 {
+        width: 100%;
+    }
+
+    .about-text-cont {
+        width: 100%;
+    }
+
+    .about-text-header {
+        letter-spacing: 3px;
+        font-weight: 800;
+    }
+
+    .about-text-text {
+        line-height: 2rem;
+    }
+
+    .slider-image {
+        height:350px;
+    }
+}
